@@ -4,17 +4,17 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            
-                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Inicio.aspx">Inicio</asp:HyperLink>
-            
+
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Inicio.aspx">Inicio</asp:HyperLink>
+
             <h1>Descripcion de cuentas</h1>
-            <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+            <asp:TextBox ID="TextBox1" runat="server" ></asp:TextBox>
             &nbsp;<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="AGREGAR" />
             <br />
             <br />
@@ -26,9 +26,9 @@
             <br />
             <br />
             <asp:ListBox ID="ListBox1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="descripcion" DataValueField="id" Height="132px" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged" Width="118px"></asp:ListBox>
-&nbsp;<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-&nbsp;<asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Eliminar" />
-&nbsp;<asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Modificar" />
+            &nbsp;<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+            &nbsp;<asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Eliminar" />
+            &nbsp;<asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Modificar" />
             <br />
             <br />
             <asp:Label ID="Label3" runat="server"></asp:Label>
